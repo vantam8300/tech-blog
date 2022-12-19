@@ -15,7 +15,6 @@ const loginFormHandler = async (event) => {
         });
 
         if (response.ok) {
-            // If successful, redirect the browser to the profile page
             document.location.replace('/');
         } else {
             document.getElementById("errors").textContent = "Incorrect username or password, please try again"
