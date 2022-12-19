@@ -2,6 +2,7 @@ const router = require('express').Router();
 const { Blog } = require('../../models');
 const Auth = require('../../utils/auth');
 
+// create blog
 router.post('/', Auth, async (req, res) => {
     try {
         const newBlog = await Blog.create({
@@ -15,6 +16,7 @@ router.post('/', Auth, async (req, res) => {
     }
 });
 
+// update blog
 router.put('/edit/:id', Auth, async (req, res) => {
     try {
         const { id } = req.params
@@ -39,6 +41,7 @@ router.put('/edit/:id', Auth, async (req, res) => {
     }
 });
 
+// delete blog
 router.delete('/delete/:id', Auth, async (req, res) => {
     try {
         const { id } = req.params
@@ -58,6 +61,7 @@ router.delete('/delete/:id', Auth, async (req, res) => {
         res.status(400).json(err);
     }
 });
+
 
 
 module.exports = router;
