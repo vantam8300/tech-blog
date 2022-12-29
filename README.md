@@ -17,7 +17,7 @@ This app is built to create a blog site where developers are able to post their 
 ## Usage Information
 Run `node index.js` in the command line or access this
 
-[Link](https://dashboard.heroku.com/apps/van-tech-blog-app/logs) for a deployed application.
+[Link](https://van-tech-blog-app.herokuapp.com/) for a deployed application.
 
 ![instruction video](./public/images/homepage.PNG)
 
